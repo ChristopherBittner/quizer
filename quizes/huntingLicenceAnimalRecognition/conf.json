@@ -1,0 +1,245 @@
+{
+  "title": "Animals",
+  "GlossList": [
+    {
+      "ID": "Moose",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "bull", "Prefix": "mb"},
+        {"Type": "cow", "Prefix": "mc"}
+      ]
+    },
+    {
+      "ID": "Reindeer",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "stag", "Prefix": "rs"},
+        {"Type": "doe", "Prefix": "rd"}
+      ]
+    },
+    {
+      "ID": "Red Deer",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "stag", "Prefix": "rds"},
+        {"Type": "doe", "Prefix": "rdd"}
+      ]
+    },
+    {
+      "ID": "Roe Deer",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "buck", "Prefix": "rob"},
+        {"Type": "doe", "Prefix": "rod"}
+      ]
+    },
+    {
+      "ID": "Fellow Deer",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "stag", "Prefix": "fs"},
+        {"Type": "doe", "Prefix": "fd"}
+      ]
+    },
+    {
+      "ID": "Mouflon",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "ram", "Prefix": "mr"},
+        {"Type": "ewe", "Prefix": "me"}
+      ]
+    },
+    {
+      "ID": "Brown Hare",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "bh"}
+      ]
+    },
+    {
+      "ID": "Snowshoe Hare",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "ssh"}
+      ]
+    },
+    {
+      "ID": "European Hare",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "eh"}
+      ]
+    },
+    {
+      "ID": "Rabbit",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "r"},
+      ]
+    },
+    {
+      "ID": "Beaver",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "b"}
+      ]
+    },
+    {
+      "ID": "Squirrel",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "s"}
+      ]
+    },
+    {
+      "ID": "Muskrat",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "m"}
+      ]
+    },
+    {
+      "ID": "Swamp beaver",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "sb"}
+      ]
+    },
+    {
+      "ID": "Nutria rat",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "nr"}
+      ]
+    },
+    {
+      "ID": "Dog",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "d"}
+      ]
+    },
+    {
+      "ID": "Wolf",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "w"}
+      ]
+    },
+    {
+      "ID": "Red Fox",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "rrf"}
+      ]
+    },
+    {
+      "ID": "Racoon Dog",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "rcd"}
+      ]
+    },
+    {
+      "ID": "Badger",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "bd"}
+      ]
+    },
+    {
+      "ID": "Mink",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "mk"}
+      ]
+    },
+    {
+      "ID": "Pine Marten",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "pm"}
+      ]
+    },
+    {
+      "ID": "Otter",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "o"}
+      ]
+    },
+    {
+      "ID": "Stoat",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "st"}
+      ]
+    },
+    {
+      "ID": "Polecat",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "pc"}
+      ]
+    },
+    {
+      "ID": "Wolverine",
+      "IDAlt1": "n/a",
+      "IDAlt2": "n/a",
+      "IDAlt3": "n/a",
+      "Prefixes": [
+        {"Type": "", "Prefix": "wv"}
+      ]
+    }
+  ]
+}
