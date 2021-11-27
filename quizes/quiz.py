@@ -15,6 +15,8 @@ class Quiz:
 
         # set question number to 0
         self.q_no = 0
+        # keep a counter of correct answers
+        self.correct = 0
 
         # no of questions
         self.data_size = len(question)
@@ -39,9 +41,6 @@ class Quiz:
 
         # displays the button for next and exit.
         self.buttons()
-
-        # keep a counter of correct answers
-        self.correct = 0
 
     def display_result(self):
         # calculates the wrong count
@@ -82,10 +81,10 @@ class Quiz:
     def buttons(self):
         next_button = Button(gui, text="Next", command=self.next_btn,
                              width=10, bg="blue", fg="white", font=("ariel", 16, "bold"))
-        next_button.place(x=100, y=720)
+        next_button.place(x=700, y=720)
         quit_button = Button(gui, text="Quit", command=gui.destroy,
                              width=5, bg="black", fg="white", font=("ariel", 16, " bold"))
-        quit_button.place(x=1800, y=50)
+        quit_button.place(x=1500, y=50)
 
     def display_options(self):
         self.opt_selected.set(0)
@@ -94,32 +93,28 @@ class Quiz:
                 self.opts[i]['text'] = option
             else:
                 label = Label(image=option)
-                label.place(x=450 * i, y=150)
+                label.place(x=420 * i, y=150)
                 self.images.append(label)
                 self.opts[i]['text'] = i + 1
 
-
-    # This method shows the current Question on the screen
     def display_question(self):
         currentQuestion = question[self.q_no]
         if type(currentQuestion) == str:
             # setting the Question properties
             q_no = Label(gui, text=f"Which one is {question[self.q_no]}", width=60,
                          font=('ariel', 16, 'bold'), anchor='w')
-            q_no.place(x=70, y=100)
+            q_no.place(x=470, y=100)
         else:
             q_no = Label(gui, text="What animal is this?", width=60,
                          font=('ariel', 16, 'bold'), anchor='w')
-            q_no.place(x=70, y=100)
+            q_no.place(x=470, y=100)
             label = Label(image=currentQuestion)
-            label.place(x=150, y=150)
+            label.place(x=650, y=140)
             self.images.append(label)
 
-
-    # This method is used to Display Title
     def display_title(self):
         # The title to be shown
-        title = Label(gui, text="QUIZ question %d / %d" % (self.q_no + 1, self.data_size),
+        title = Label(gui, text="QUIZ question %d / %d - correct answers %d" % (self.q_no + 1, self.data_size, self.correct),
                       width=120, bg="green", fg="white", font=("ariel", 20, "bold"))
 
         # place of the title
@@ -135,9 +130,9 @@ class Quiz:
         while len(q_list) < 4:
             # setting the radio button properties
             radio_btn = Radiobutton(gui, text=" ", variable=self.opt_selected,
-                                    value=len(q_list) + 1, font=("ariel", 14))
+                                    value=len(q_list), font=("ariel", 14))
             q_list.append(radio_btn)
-            radio_btn.place(x=100, y=y_pos)
+            radio_btn.place(x=700, y=y_pos)
             y_pos += 40
 
         # return the radio buttons
@@ -148,7 +143,7 @@ class Quiz:
 gui = Tk()
 
 # set the size of the GUI Window
-gui.geometry("1900x800")
+gui.geometry("1665x800")
 
 quizName = "huntingLicenceAnimalRecognition"
 gui.title(quizName)
@@ -157,41 +152,6 @@ generatedQuiz = readQuiz.createQuiz(20, 4)
 question = generatedQuiz["questions"]
 options = generatedQuiz["options"]
 answer = generatedQuiz["answers"]
-# # 0 - select name from selection of given photo
-# # 1 - select photo of the given name
-# question = ([
-#     "Moose",
-#     ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_moose.bmp")),
-#     "Reindeer",
-#     "Roe deer"
-#   ])
-# options = ([
-#     # [ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_moose.bmp")),
-#     #  ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_r54zmg4h.bmp")),
-#     #  ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_moose.bmp")),
-#     #  ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_ucthl1v5.bmp"))
-#     # ],
-#     ["Moose",
-#       "Reindeer",
-#       "Roe deer",
-#       "Goose"
-#     ],
-#     ["Goose",
-#       "Moose",
-#       "Reindeer",
-#       "Roe deer"
-#     ],
-#     ["Goose",
-#       "Reindeer",
-#       "Roe deer",
-#       "Moose"
-#     ]])
-# answer = ([
-#     1,
-#     1,
-#     2,
-#     4
-#   ])
 
 # create an object of the Quiz Class.
 quiz = Quiz()

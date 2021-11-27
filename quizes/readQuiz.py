@@ -3,7 +3,6 @@ import json
 import random
 import os
 from PIL import ImageTk, Image
-from tkinter import PhotoImage
 
 QUIZ = "huntingLicenceAnimalRecognition"
 CONF = f"{QUIZ}/conf.json"
@@ -42,10 +41,12 @@ def createOptions(questionType, animal, amount=3):
             options.append(getRandomPhotoOf(getRandomPrefix(optionAnimal["Prefixes"])))
     return options
 
+
 def getPhoto(path):
     ph = Image.open(path)
     ph = ph.resize((400, 400))
     return ImageTk.PhotoImage(ph)
+
 
 def getRandomPhotoOf(selectedPrefix):
     selections = []
