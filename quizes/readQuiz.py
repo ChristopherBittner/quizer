@@ -91,7 +91,7 @@ def createQuiz(questionsAmount = 20, questionOptions=4):
                 if len(optionCandidates) > 0:
                     options.append(optionCandidates.pop())
         if not correctAdded:
-            quiz["answers"].append(questionOptions)
+            quiz["answers"].append(questionOptions - 1)
             if questionType == 1:
                 options.append(questionAnimal["ID"])
             else:

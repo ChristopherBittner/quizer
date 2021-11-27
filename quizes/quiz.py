@@ -4,6 +4,9 @@ from tkinter import *
 from tkinter import messagebox as mb
 import readQuiz
 
+from playsound import playsound
+
+
 # class to define the components of the GUI
 class Quiz:
     # This is the first method which is called when a
@@ -59,7 +62,11 @@ class Quiz:
     def check_ans(self, q_no):
         if self.opt_selected.get() == answer[q_no]:
             # if the option is correct it return true
+            playsound('546083__stavsounds__correct1.wav')
             return True
+        else:
+            playsound('483598__raclure__wrong.mp3')
+            return False
 
     def next_btn(self):
         if self.check_ans(self.q_no):
