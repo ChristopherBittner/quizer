@@ -2,11 +2,7 @@ from tkinter import *
 
 # and import messagebox as mb from tkinter
 from tkinter import messagebox as mb
-from PIL import ImageTk, Image
-
-# import json to use json file for data
-import json
-
+import readQuiz
 
 # class to define the components of the GUI
 class Quiz:
@@ -156,47 +152,46 @@ gui.geometry("1900x800")
 
 quizName = "huntingLicenceAnimalRecognition"
 gui.title(quizName)
-# questionSelectName.question("Question number 1", "huntingLicenceAnimalRecognition/pix/mb_moose.bmp",
-#                             ["moose", "reinder", "roe deer", "fellow deer"], 0)
-# get the data from the json file
-with open(f'{quizName}/conf.json') as f:
-    data = json.load(f)
 
-# 0 - select name from selection of given photo
-# 1 - select photo of the given name
-question = ([
-    "Moose",
-    ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_moose.bmp")),
-    "Reindeer",
-    "Roe deer"
-  ])
-options = ([
-    [ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_moose.bmp")),
-     ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_r54zmg4h.bmp")),
-     ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_moose.bmp")),
-     ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_ucthl1v5.bmp"))
-    ],
-    ["Moose",
-      "Reindeer",
-      "Roe deer",
-      "Goose"
-    ],
-    ["Goose",
-      "Moose",
-      "Reindeer",
-      "Roe deer"
-    ],
-    ["Goose",
-      "Reindeer",
-      "Roe deer",
-      "Moose"
-    ]])
-answer = ([
-    1,
-    1,
-    2,
-    4
-  ])
+generatedQuiz = readQuiz.createQuiz(20, 4)
+question = generatedQuiz["questions"]
+options = generatedQuiz["options"]
+answer = generatedQuiz["answers"]
+# # 0 - select name from selection of given photo
+# # 1 - select photo of the given name
+# question = ([
+#     "Moose",
+#     ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_moose.bmp")),
+#     "Reindeer",
+#     "Roe deer"
+#   ])
+# options = ([
+#     # [ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_moose.bmp")),
+#     #  ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_r54zmg4h.bmp")),
+#     #  ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_moose.bmp")),
+#     #  ImageTk.PhotoImage(Image.open("huntingLicenceAnimalRecognition/pix/mb_ucthl1v5.bmp"))
+#     # ],
+#     ["Moose",
+#       "Reindeer",
+#       "Roe deer",
+#       "Goose"
+#     ],
+#     ["Goose",
+#       "Moose",
+#       "Reindeer",
+#       "Roe deer"
+#     ],
+#     ["Goose",
+#       "Reindeer",
+#       "Roe deer",
+#       "Moose"
+#     ]])
+# answer = ([
+#     1,
+#     1,
+#     2,
+#     4
+#   ])
 
 # create an object of the Quiz Class.
 quiz = Quiz()
