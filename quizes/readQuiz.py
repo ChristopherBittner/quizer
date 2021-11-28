@@ -11,10 +11,10 @@ PIX_PATH = f"{QUIZ}/pix"
 pixesList = glob.glob(f"{PIX_PATH}/*.bmp")
 pixesList.extend(glob.glob(f"{PIX_PATH}/*.jpg"))
 
-animals = []
+entries = []
 with open(CONF) as f:
     data = json.load(f)
-    animals = data['GlossList']
+    entries = data['GlossList']
 
 
 def getRandomPrefix(prefixes):
@@ -29,12 +29,51 @@ def createAQuestion(questionType, animal):
         return getRandomPhotoOf(getRandomPrefix(animal["Prefixes"]))
 
 
-def createOptions(questionType, animal, amount=3):
+def breakStringIntoWords(inputStr: str):
+    inputStr.replace("/", " ")
+    return inputStr.split(" ")
+
+
+def createListOfEntriesThatFollowTheKeyWords(keyWords):
+    limitedEntries = list()
+    for entry in entries:
+        entryKeyWords = list()
+        entryKeyWords.extend(breakStringIntoWords(entry["ID"]))
+        for p in entry["Prefixes"]:
+            entryKeyWords.extend(breakStringIntoWords(p["Type"]))
+        match = False
+        for kw in keyWords:
+            if match: break
+            for ew in entryKeyWords:
+                if match: break
+                if kw == ew:
+                    limitedEntries.append(entry)
+                    match = True
+    return limitedEntries
+
+
+def createOptions(questionType, entry, amount=3):
     options = list()
+
+    # Create list of words that represents the animal
+    keyWords = list()
+    keyWords.extend(breakStringIntoWords(entry["ID"]))
+    for p in entry["Prefixes"]:
+        keyWords.extend(breakStringIntoWords(p["Type"]))
+
+    limitedEntries = createListOfEntriesThatFollowTheKeyWords(keyWords)
+
     for i in range(amount):
-        optionAnimal = getRandomAnimal()
-        while optionAnimal is animal:
-            optionAnimal = getRandomAnimal()
+        # Try finding entry that has similar ID or prefix
+        optionAnimal = getRandomEntry(tmpEntries=limitedEntries)
+        # Repeat if same entry was found
+        if optionAnimal is entry:
+            optionAnimal = getRandomEntry(tmpEntries=limitedEntries)
+        # If cant find try random entry from whole pool
+        # Repeat also if the option is already in pool
+        while optionAnimal is entry or optionAnimal is None or optionAnimal["ID"] in options:
+            optionAnimal = getRandomEntry()
+        # Finally add either the name of the photo to the options
         if questionType == 1:
             options.append(optionAnimal["ID"])
         else:
@@ -64,12 +103,15 @@ def getRandomPhotoOf(selectedPrefix):
     return getPhoto(selections[random.randint(0, len(selections) - 1)])
 
 
-def getRandomAnimal():
-    return animals[random.randint(0, len(animals) - 1)]
+def getRandomEntry(tmpEntries=None):
+    if tmpEntries and len(tmpEntries) > 0:
+        return tmpEntries[random.randint(0, len(tmpEntries) - 1)]
+    else:
+        return entries[random.randint(0, len(entries) - 1)]
 
 
 def getAnimal(animalName):
-    for a in animals:
+    for a in entries:
         if a["ID"] == animalName:
             return a
 
@@ -82,7 +124,7 @@ def createQuiz(questionsAmount = 20, questionOptions=4):
     quiz["answers"] = list()
     for i in range(questionsAmount):
         questionType = random.randint(0, 1)
-        questionAnimal = getRandomAnimal()
+        questionAnimal = getRandomEntry()
         question = createAQuestion(questionType, questionAnimal)
         optionCandidates = createOptions(questionType, questionAnimal, amount=questionOptions - 1)
         options = list()
@@ -106,7 +148,7 @@ def createQuiz(questionsAmount = 20, questionOptions=4):
 
 
 def createCatalog():
-    for animal in animals:
+    for animal in entries:
         for i, prefix in enumerate(animal['Prefixes']):
             animal['Prefixes'][i]["Photos"] = getAllPhotosOf(prefix["Prefix"])
-    return animals
+    return entries

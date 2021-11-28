@@ -152,7 +152,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "w"}
+        {"Type": "dogs", "Prefix": "w"}
       ]
     },
     {
@@ -161,7 +161,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "rrf"}
+        {"Type": "dogs", "Prefix": "rrf"}
       ]
     },
     {
@@ -170,7 +170,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "rcd"}
+        {"Type": "dogs", "Prefix": "rcd"}
       ]
     },
     {
@@ -179,7 +179,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "bd"}
+        {"Type": "dogs", "Prefix": "bd"}
       ]
     },
     {
@@ -188,7 +188,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "mk"}
+        {"Type": "weasels", "Prefix": "mk"}
       ]
     },
     {
@@ -197,7 +197,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "pm"}
+        {"Type": "weasels", "Prefix": "pm"}
       ]
     },
     {
@@ -206,7 +206,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "st"}
+        {"Type": "weasels", "Prefix": "st"}
       ]
     },
     {
@@ -215,7 +215,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "pc"}
+        {"Type": "weasels", "Prefix": "pc"}
       ]
     },
     {
@@ -224,7 +224,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "o"}
+        {"Type": "weasels", "Prefix": "o"}
       ]
     },
     {
@@ -233,7 +233,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "weasel", "Prefix": "wv"}
+        {"Type": "weasels", "Prefix": "wv"}
       ]
     },
     {
@@ -242,7 +242,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "rc"}
+        {"Type": "weasels", "Prefix": "rc"}
       ]
     },
     {
@@ -251,7 +251,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "l"}
+        {"Type": "large predators", "Prefix": "l"}
       ]
     },
     {
@@ -260,7 +260,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "bear"}
+        {"Type": "large predators", "Prefix": "bear"}
       ]
     },
     {
@@ -314,7 +314,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "wg"}
+        {"Type": "galliforms", "Prefix": "wg"}
       ]
     },
     {
@@ -323,7 +323,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "rp"}
+        {"Type": "galliforms", "Prefix": "rp"}
       ]
     },
     {
@@ -332,7 +332,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "prt"}
+        {"Type": "galliforms", "Prefix": "prt"}
       ]
     },
     {
@@ -341,7 +341,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "hg"}
+        {"Type": "galliforms", "Prefix": "hg"}
       ]
     },
     {
@@ -350,7 +350,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "bg"}
+        {"Type": "galliforms", "Prefix": "bg"}
       ]
     },
     {
@@ -359,7 +359,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "cpc"}
+        {"Type": "galliforms", "Prefix": "cpc"}
       ]
     },
     {
@@ -368,16 +368,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "ph"}
-      ]
-    },
-    {
-      "ID": "Wade / Wading bird",
-      "IDAlt1": "n/a",
-      "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
-      "Prefixes": [
-        {"Type": "", "Prefix": "wb"}
+        {"Type": "galliforms", "Prefix": "ph"}
       ]
     },
     {
@@ -386,7 +377,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "cs"}
+        {"Type": "wader birds", "Prefix": "cs"}
       ]
     },
     {
@@ -395,7 +386,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "wcc"}
+        {"Type": "wader birds", "Prefix": "wcc"}
       ]
     },
     {
@@ -404,7 +395,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "grnp"}
+        {"Type": "wader birds", "Prefix": "grnp"}
       ]
     },
     {
@@ -413,7 +404,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "js"}
+        {"Type": "wader birds", "Prefix": "js"}
       ]
     },
     {
@@ -422,7 +413,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "gp"}
+        {"Type": "wader birds", "Prefix": "gp"}
       ]
     },
     {
@@ -431,7 +422,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "gryp"}
+        {"Type": "wader birds", "Prefix": "gryp"}
       ]
     },
 
@@ -441,7 +432,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "cr"}
+        {"Type": "cormorant and shag", "Prefix": "cr"}
       ]
     },
     {
@@ -450,7 +441,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "", "Prefix": "es"}
+        {"Type": "cormorant and shag", "Prefix": "es"}
       ]
     },
     {
@@ -785,7 +776,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "crow", "Prefix": "hrc"}
+        {"Type": "crows", "Prefix": "hrc"}
       ]
     },
     {
@@ -794,7 +785,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "crow", "Prefix": "roc"}
+        {"Type": "crows", "Prefix": "roc"}
       ]
     },
     {
@@ -803,7 +794,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "crow", "Prefix": "ccc"}
+        {"Type": "crows", "Prefix": "ccc"}
       ]
     },
     {
@@ -812,7 +803,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "crow", "Prefix": "hc"}
+        {"Type": "crows", "Prefix": "hc"}
       ]
     },
     {
@@ -821,7 +812,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "crow", "Prefix": "mgc"}
+        {"Type": "crows", "Prefix": "mgc"}
       ]
     },
     {
@@ -830,7 +821,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "crow", "Prefix": "ejc"}
+        {"Type": "crows", "Prefix": "ejc"}
       ]
     },
     {
@@ -839,7 +830,7 @@
       "IDAlt2": "n/a",
       "IDAlt3": "n/a",
       "Prefixes": [
-        {"Type": "crow", "Prefix": "sbjc"}
+        {"Type": "crows", "Prefix": "sbjc"}
       ]
     },
     {
