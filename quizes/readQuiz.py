@@ -42,10 +42,18 @@ def createOptions(questionType, animal, amount=3):
     return options
 
 
-def getPhoto(path):
+def getPhoto(path, xSize=400, ySize=400):
     ph = Image.open(path)
-    ph = ph.resize((400, 400))
+    ph = ph.resize((xSize, ySize))
     return ImageTk.PhotoImage(ph)
+
+
+def getAllPhotosOf(selectedPrefix):
+    selections = []
+    for p in pixesList:
+        if os.path.basename(p).startswith(f"{selectedPrefix}_"):
+            selections.append(getPhoto(p, 200, 200))
+    return selections
 
 
 def getRandomPhotoOf(selectedPrefix):
@@ -102,3 +110,10 @@ def createQuiz(questionsAmount = 20, questionOptions=4):
         quiz["options"].append(options)
 
     return quiz
+
+
+def createCatalog():
+    for animal in animals:
+        for i, prefix in enumerate(animal['Prefixes']):
+            animal['Prefixes'][i]["Photos"] = getAllPhotosOf(prefix["Prefix"])
+    return animals
