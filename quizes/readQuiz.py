@@ -86,10 +86,9 @@ def createQuiz(questionsAmount = 20, questionOptions=4):
         question = createAQuestion(questionType, questionAnimal)
         optionCandidates = createOptions(questionType, questionAnimal, amount=questionOptions - 1)
         options = list()
-        correctAdded = False
+        correctToAddAt = random.randint(0, questionOptions - 1)
         for i in range(len(optionCandidates) + 1):
-            if random.randint(0, 1) == 0 and not correctAdded:
-                correctAdded = True
+            if i == correctToAddAt:
                 quiz["answers"].append(i)
                 if questionType == 1:
                     options.append(questionAnimal["ID"])
@@ -98,12 +97,6 @@ def createQuiz(questionsAmount = 20, questionOptions=4):
             else:
                 if len(optionCandidates) > 0:
                     options.append(optionCandidates.pop())
-        if not correctAdded:
-            quiz["answers"].append(questionOptions - 1)
-            if questionType == 1:
-                options.append(questionAnimal["ID"])
-            else:
-                options.append(getRandomPhotoOf(getRandomPrefix(questionAnimal["Prefixes"])))
 
         quiz["animals"].append(questionAnimal)
         quiz["questions"].append(question)
