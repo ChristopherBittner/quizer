@@ -86,7 +86,7 @@ class Viewer:
         self._itemsToDestroyOnrefresh.append(entryID)
         for i, prefix in enumerate(currentEntry['Prefixes']):
             prefixID = Label(gui, text=f"{prefix['Type']}", width=30,
-                            font=('ariel', 16, 'bold'), anchor='w')
+                            font=('ariel', 16, 'normal'), anchor='w')
             prefixID.place(x=20, y=80 + (yOffset + yAlign * i))
             self._itemsToDestroyOnrefresh.append(prefixID)
             for j, photo in enumerate(prefix["Photos"]):

@@ -19,7 +19,9 @@ class Quiz:
         # set question number to 0
         self.q_no = 0
         # keep a counter of correct answers
-        self.correct = 0
+        self.incorrect = 0
+        self.withFirstTry = 0
+        self.firstTry = True
 
         # no of questions
         self.data_size = len(question)
@@ -47,16 +49,17 @@ class Quiz:
 
     def display_result(self):
         # calculates the wrong count
-        wrong_count = self.data_size - self.correct
-        correct = f"Correct: {self.correct}"
-        wrong = f"Wrong: {wrong_count}"
+        wrong_count = self.data_size - self.withFirstTry
+        mistakes = f"Mistakes: {self.incorrect}"
+        correct = f"Correct with first try: {self.withFirstTry}"
+        wrong = f"Wrong with first try: {wrong_count}"
 
         # calcultaes the percentage of correct answers
-        score = int(self.correct / self.data_size * 100)
+        score = int(self.withFirstTry / self.data_size * 100)
         result = f"Score: {score}%"
 
         # Shows a message box to display the result
-        mb.showinfo("Result", f"{result}\n{correct}\n{wrong}")
+        mb.showinfo("Result", f"{result}\n{correct}\n{wrong}\n{mistakes}")
 
     # This method checks the Answer after we click on Next.
     def check_ans(self, q_no):
@@ -69,21 +72,26 @@ class Quiz:
             return False
 
     def next_btn(self):
-        if self.check_ans(self.q_no):
+        if not self.check_ans(self.q_no):
             # if the answer is correct it increments the correct by 1
-            self.correct += 1
-        self.q_no += 1
-
-        # checks if the q_no size is equal to the data size
-        if self.q_no == self.data_size:
-            self.display_result()
-            gui.destroy()
+            self.incorrect += 1
+            self.firstTry = False
         else:
-            for im in self.images:
-                im.destroy()
-            self.display_title()
-            self.display_question()
-            self.display_options()
+            if self.firstTry:
+                self.withFirstTry += 1
+            else:
+                self.firstTry = True
+            self.q_no += 1
+            # checks if the q_no size is equal to the data size
+            if self.q_no == self.data_size:
+                self.display_result()
+                gui.destroy()
+            else:
+                for im in self.images:
+                    im.destroy()
+                self.display_title()
+                self.display_question()
+                self.display_options()
 
     def buttons(self):
         next_button = Button(gui, text="Next", command=self.next_btn,
@@ -121,7 +129,10 @@ class Quiz:
 
     def display_title(self):
         # The title to be shown
-        title = Label(gui, text="QUIZ question %d / %d - correct answers %d" % (self.q_no + 1, self.data_size, self.correct),
+        title = Label(gui, text="QUIZ question %d / %d - correct first try %d - mistakes %d" % (self.q_no + 1,
+                                                                                                self.data_size,
+                                                                                                self.withFirstTry,
+                                                                                                self.incorrect),
                       width=120, bg="green", fg="white", font=("ariel", 20, "bold"))
 
         # place of the title
