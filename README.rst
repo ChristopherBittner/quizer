@@ -24,3 +24,4 @@ By default it has a base containing photos of animals needed for passing hunter 
 - startup might be longer
 - It shows all prefixes for all entries
 - Random button moves the view to random index between first and last
+- Goto button will move to the index (if valid) provided in entry box
