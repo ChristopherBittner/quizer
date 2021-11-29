@@ -5,7 +5,7 @@
       "ID": "Moose",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "bull", "Prefix": "mb"},
         {"Type": "cow", "Prefix": "mc"}
@@ -15,7 +15,7 @@
       "ID": "Reindeer",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "stag", "Prefix": "rs"},
         {"Type": "doe", "Prefix": "rd"}
@@ -25,7 +25,7 @@
       "ID": "Red Deer",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "stag", "Prefix": "rds"},
         {"Type": "doe", "Prefix": "rdd"}
@@ -35,7 +35,7 @@
       "ID": "Roe Deer",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "buck", "Prefix": "rob"},
         {"Type": "doe", "Prefix": "rod"}
@@ -45,7 +45,7 @@
       "ID": "Fellow Deer",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "stag", "Prefix": "fs"},
         {"Type": "doe", "Prefix": "fd"}
@@ -55,7 +55,7 @@
       "ID": "Mouflon",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "ram", "Prefix": "mr"},
         {"Type": "ewe", "Prefix": "me"}
@@ -65,7 +65,7 @@
       "ID": "Snowshoe Hare",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "rodent", "Prefix": "ssh"}
       ]
@@ -74,7 +74,7 @@
       "ID": "European / Brown Hare",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "rodent", "Prefix": "h"}
       ]
@@ -83,7 +83,7 @@
       "ID": "Rabbit",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "rodent", "Prefix": "r"}
       ]
@@ -92,7 +92,7 @@
       "ID": "Squirrel",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "rodent", "Prefix": "s"}
       ]
@@ -101,7 +101,7 @@
       "ID": "Beaver",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "rodent", "Prefix": "b"}
       ]
@@ -110,7 +110,7 @@
       "ID": "Muskrat",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "rodent", "Prefix": "m"}
       ]
@@ -119,7 +119,7 @@
       "ID": "Coypu / Swamp beaver / Nutria rat",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "rodent", "Prefix": "sb"}
       ]
@@ -159,7 +159,7 @@
       "ID": "Red Fox",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "dogs", "Prefix": "rrf"}
       ]
@@ -168,7 +168,7 @@
       "ID": "Racoon Dog",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "dogs", "Prefix": "rcd"}
       ]
@@ -177,7 +177,7 @@
       "ID": "Badger",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "dogs", "Prefix": "bd"}
       ]
@@ -186,7 +186,7 @@
       "ID": "Mink",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "weasels", "Prefix": "mk"}
       ]
@@ -195,7 +195,7 @@
       "ID": "Pine Marten",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "weasels", "Prefix": "pm"}
       ]
@@ -204,7 +204,7 @@
       "ID": "Stoat",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "weasels", "Prefix": "st"}
       ]
@@ -213,7 +213,7 @@
       "ID": "Polecat",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "weasels", "Prefix": "pc"}
       ]
@@ -222,7 +222,7 @@
       "ID": "Otter",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "weasels", "Prefix": "o"}
       ]
@@ -231,7 +231,7 @@
       "ID": "Wolverine",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "weasels", "Prefix": "wv"}
       ]
@@ -240,7 +240,7 @@
       "ID": "Racoon",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "weasels", "Prefix": "rc"}
       ]
@@ -249,7 +249,7 @@
       "ID": "Lynx",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "large predators", "Prefix": "l"}
       ]
@@ -267,7 +267,7 @@
       "ID": "Ringed seal",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "seal", "Prefix": "rns"}
       ]
@@ -276,7 +276,7 @@
       "ID": "Gray seal",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "seal", "Prefix": "grs"}
       ]
@@ -285,7 +285,7 @@
       "ID": "Harbor / common seal",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "seal", "Prefix": "hrs"}
       ]
@@ -294,7 +294,7 @@
       "ID": "Harp / saddleback / Greenland seal",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "seal", "Prefix": "hps"}
       ]
@@ -303,7 +303,7 @@
       "ID": "Wild boar",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "", "Prefix": "wbr"}
       ]
@@ -312,7 +312,7 @@
       "ID": "Willow grouse",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "galliforms", "Prefix": "wg"}
       ]
@@ -321,7 +321,7 @@
       "ID": "Rock ptarmigan",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "galliforms", "Prefix": "rp"}
       ]
@@ -330,7 +330,7 @@
       "ID": "Partridge",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "galliforms", "Prefix": "prt"}
       ]
@@ -339,7 +339,7 @@
       "ID": "Hazel grouse",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "galliforms", "Prefix": "hg"}
       ]
@@ -348,7 +348,7 @@
       "ID": "Black grouse",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "galliforms", "Prefix": "bg"}
       ]
@@ -357,7 +357,7 @@
       "ID": "Capercaillie / Wood grouse / Heather cock",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "galliforms", "Prefix": "cpc"}
       ]
@@ -366,7 +366,7 @@
       "ID": "Pheasant",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "galliforms", "Prefix": "ph"}
       ]
@@ -375,7 +375,7 @@
       "ID": "Common snipe",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "wader birds", "Prefix": "cs"}
       ]
@@ -384,7 +384,7 @@
       "ID": "Woodcock",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "wader birds", "Prefix": "wcc"}
       ]
@@ -411,7 +411,7 @@
       "ID": "Golden plover",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "wader birds", "Prefix": "gp"}
       ]
@@ -430,7 +430,7 @@
       "ID": "Cormorant",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "cormorant and shag", "Prefix": "cr"}
       ]
@@ -439,7 +439,7 @@
       "ID": "European shag",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "cormorant and shag", "Prefix": "es"}
       ]
@@ -503,7 +503,7 @@
       "ID": "Eurasian Wigeon",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "dabbling duck", "Prefix": "ewd"}
       ]
@@ -521,7 +521,7 @@
       "ID": "Teal / Eurasian / Common / Green Winged",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "dabbling duck", "Prefix": "tecg"}
       ]
@@ -539,7 +539,7 @@
       "ID": "Mallard",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "dabbling duck", "Prefix": "ml"}
       ]
@@ -593,7 +593,7 @@
       "ID": "Common scoter / Black scoter",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "diving duck", "Prefix": "cst"}
       ]
@@ -611,7 +611,7 @@
       "ID": "Goldeneye",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "diving duck", "Prefix": "ged"}
       ]
@@ -629,7 +629,7 @@
       "ID": "Tufted duck",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "diving duck", "Prefix": "tfd"}
       ]
@@ -638,7 +638,7 @@
       "ID": "Long-Tailed Duck",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "diving duck", "Prefix": "ltd"}
       ]
@@ -647,7 +647,7 @@
       "ID": "Eider duck",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "diving duck", "Prefix": "eid"}
       ]
@@ -657,7 +657,7 @@
       "ID": "Eurasian Goosander",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "fish duck", "Prefix": "egoo"}
       ]
@@ -666,7 +666,7 @@
       "ID": "Red-Brested merganser",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "fish duck", "Prefix": "rbrm"}
       ]
@@ -684,7 +684,7 @@
       "ID": "Graylag goose",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "goose", "Prefix": "glg"}
       ]
@@ -702,7 +702,7 @@
       "ID": "Pink-footed goose",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "goose", "Prefix": "pfg"}
       ]
@@ -711,7 +711,7 @@
       "ID": "Canada goose",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "goose", "Prefix": "cg"}
       ]
@@ -720,7 +720,7 @@
       "ID": "Bar-Header goose",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "goose", "Prefix": "bhg"}
       ]
@@ -756,7 +756,7 @@
       "ID": "Stock Dove / Pidgeon",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "dove", "Prefix": "dddd"}
       ]
@@ -765,7 +765,7 @@
       "ID": "Wood Pidgeon",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "dove", "Prefix": "wddd"}
       ]
@@ -774,7 +774,7 @@
       "ID": "Raven",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "crows", "Prefix": "hrc"}
       ]
@@ -801,7 +801,7 @@
       "ID": "Hooded crow",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "crows", "Prefix": "hc"}
       ]
@@ -810,7 +810,7 @@
       "ID": "Magpie",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "crows", "Prefix": "mgc"}
       ]
@@ -819,7 +819,7 @@
       "ID": "Eurasian Jay",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "crows", "Prefix": "ejc"}
       ]
@@ -837,7 +837,7 @@
       "ID": "Fieldfare",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "thrush/throstle", "Prefix": "ftt"}
       ]
@@ -846,7 +846,7 @@
       "ID": "Redwing Thrush",
       "IDAlt1": "n/a",
       "IDAlt2": "n/a",
-      "IDAlt3": "n/a",
+      "IDAlt3": "huntable",
       "Prefixes": [
         {"Type": "thrush/throstle", "Prefix": "rftt"}
       ]

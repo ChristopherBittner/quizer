@@ -22,11 +22,13 @@ def getRandomPrefix(prefixes):
         return prefixes[random.randint(0, len(prefixes) - 1)]["Prefix"]
 
 
-def createAQuestion(questionType, animal):
+def createAQuestion(questionType, entry):
     if questionType == 0:
-        return animal["ID"]
-    else:
-        return getRandomPhotoOf(getRandomPrefix(animal["Prefixes"]))
+        return entry["ID"]
+    elif questionType == 1:
+        return getRandomPhotoOf(getRandomPrefix(entry["Prefixes"]))
+    elif questionType == 2:
+        return not entry["IDAlt3"] == "n/a"
 
 
 def breakStringIntoWords(inputStr: str):
@@ -123,24 +125,33 @@ def createQuiz(questionsAmount = 20, questionOptions=4):
     quiz["options"] = list()
     quiz["answers"] = list()
     for i in range(questionsAmount):
-        questionType = random.randint(0, 1)
-        questionAnimal = getRandomEntry()
-        question = createAQuestion(questionType, questionAnimal)
-        optionCandidates = createOptions(questionType, questionAnimal, amount=questionOptions - 1)
+        questionType = random.randint(0, 2)
+        questionEntry = getRandomEntry()
+        question = createAQuestion(questionType, questionEntry)
         options = list()
-        correctToAddAt = random.randint(0, questionOptions - 1)
-        for i in range(len(optionCandidates) + 1):
-            if i == correctToAddAt:
-                quiz["answers"].append(i)
-                if questionType == 1:
-                    options.append(questionAnimal["ID"])
+        if questionType == 2:
+            options.append("yes")
+            options.append("no")
+            quiz["answers"].append(0 if question else 1)
+            question = questionEntry
+            p = question["Prefixes"][random.randint(0, len(question["Prefixes"]) - 1)]
+            question["type"] = p["Type"]
+            question["photo"] = getRandomPhotoOf(p["Prefix"])
+        else:
+            optionCandidates = createOptions(questionType, questionEntry, amount=questionOptions - 1)
+            correctToAddAt = random.randint(0, questionOptions - 1)
+            for i in range(len(optionCandidates) + 1):
+                if i == correctToAddAt:
+                    quiz["answers"].append(i)
+                    if questionType == 1:
+                        options.append(questionEntry["ID"])
+                    elif questionType == 0:
+                        options.append(getRandomPhotoOf(getRandomPrefix(questionEntry["Prefixes"])))
                 else:
-                    options.append(getRandomPhotoOf(getRandomPrefix(questionAnimal["Prefixes"])))
-            else:
-                if len(optionCandidates) > 0:
-                    options.append(optionCandidates.pop())
+                    if len(optionCandidates) > 0:
+                        options.append(optionCandidates.pop())
 
-        quiz["animals"].append(questionAnimal)
+        quiz["animals"].append(questionEntry)
         quiz["questions"].append(question)
         quiz["options"].append(options)
 
