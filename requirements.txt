@@ -1,2 +1,4 @@
-PIL
+Pillow
 playsound
+gst
+pygobject

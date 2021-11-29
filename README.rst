@@ -25,3 +25,18 @@ By default it has a base containing photos of animals needed for passing hunter 
 - It shows all prefixes for all entries
 - Random button moves the view to random index between first and last
 - Goto button will move to the index (if valid) provided in entry box
+
+FAQ
+
+**Tkinter missing**
+
+Might require to be installed separately on Linux machines.
+For me that was solved by:
+
+sudo apt-get install python3.9-tk
+
+**ValueError: Namespace Gst not available**
+
+If sounds cannot be played under Linux, try installing:
+
+sudo apt-get install gstreamer-1.0
