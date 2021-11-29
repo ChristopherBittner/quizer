@@ -5,7 +5,7 @@ from tkinter import messagebox as mb
 import readQuiz
 
 from playsound import playsound
-
+from PIL import ImageTk, Image
 
 # class to define the components of the GUI
 class Quiz:
@@ -89,6 +89,7 @@ class Quiz:
             else:
                 for im in self.images:
                     im.destroy()
+                self.opts = self.radio_buttons()
                 self.display_title()
                 self.display_question()
                 self.display_options()
@@ -106,7 +107,8 @@ class Quiz:
         for i, option in enumerate(options[self.q_no]):
             if type(option) == str:
                 self.opts[i]['text'] = option
-            else:
+                self.images.append(self.opts[i])
+            elif type(option) == ImageTk.PhotoImage:
                 label = Label(image=option)
                 label.place(x=420 * i, y=150)
                 self.images.append(label)
@@ -119,11 +121,18 @@ class Quiz:
             q_no = Label(gui, text=f"Which one is {question[self.q_no]}", width=60,
                          font=('ariel', 16, 'bold'), anchor='w')
             q_no.place(x=470, y=100)
-        else:
+        elif type(currentQuestion) == ImageTk.PhotoImage:
             q_no = Label(gui, text="What animal is this?", width=60,
                          font=('ariel', 16, 'bold'), anchor='w')
             q_no.place(x=470, y=100)
             label = Label(image=currentQuestion)
+            label.place(x=650, y=140)
+            self.images.append(label)
+        else:
+            q_no = Label(gui, text=f"Is {currentQuestion['ID']} huntable in Norway?     From type: {currentQuestion['type']}", width=60,
+                         font=('ariel', 16, 'bold'), anchor='w')
+            q_no.place(x=470, y=100)
+            label = Label(image=currentQuestion["photo"])
             label.place(x=650, y=140)
             self.images.append(label)
 

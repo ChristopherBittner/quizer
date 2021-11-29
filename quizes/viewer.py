@@ -82,7 +82,10 @@ class Viewer:
         xAlign = 200
         entryID = Label(gui, text=f"{currentEntry['ID']}", width=40,
                         font=('ariel', 16, 'bold'), anchor='w')
-        entryID.place(x=0, y=40)
+        entryID.place(x=0, y=6)
+        altID = Label(gui, text=f"{currentEntry['IDAlt3']}", width=40,
+                        font=('ariel', 10, 'normal'), anchor='w')
+        altID.place(x=0, y=40)
         self._itemsToDestroyOnrefresh.append(entryID)
         for i, prefix in enumerate(currentEntry['Prefixes']):
             prefixID = Label(gui, text=f"{prefix['Type']}", width=30,
